@@ -1,6 +1,6 @@
 import UIKit
 
-class DetailViewControlerViewController: UIViewController {
+class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
