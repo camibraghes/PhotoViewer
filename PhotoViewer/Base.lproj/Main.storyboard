@@ -67,6 +67,9 @@
                             <constraint firstItem="dtg-Q2-wyF" firstAttribute="centerY" secondItem="B4G-a8-HUB" secondAttribute="centerY" id="rbc-OD-4N4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="dtg-Q2-wyF" id="jmG-QW-9f9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z16-ls-Sjz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
