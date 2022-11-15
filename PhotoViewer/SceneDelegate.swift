@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  PhotoViewer
-//
-//  Created by Camelia Braghes on 15.11.2022.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

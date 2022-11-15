@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  PhotoViewer
-//
-//  Created by Camelia Braghes on 15.11.2022.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
