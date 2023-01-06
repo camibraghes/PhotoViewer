@@ -3,12 +3,15 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet var imageView: UIImageView!
+    
     var selectedImage: String?
+    var totalPictures = 0
+    var pictureSelected = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        title = selectedImage
+        title = "Picture \(pictureSelected) of \(totalPictures)"
         navigationItem.largeTitleDisplayMode = .never
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
@@ -34,7 +37,7 @@ class DetailViewController: UIViewController {
             return
         }
         
-        let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
+        let vc = UIActivityViewController(activityItems: [image, selectedImage?.replacingOccurrences(of: ".jpg", with: "")], applicationActivities: [])
         vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         present(vc, animated: true)
     }
